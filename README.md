@@ -19,7 +19,7 @@ Optional：
 
 
 ## PanK-Pipeline
-Here, We applied the _Brassica rapa_ pangenome, comprising 30 assemblies, together with resequencing data from 1,543 accessions, to demonstrate the [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) pipeline. This pipeline is broadly applicable to pangenome assemblies and population resequencing data from any species
+Here, We applied the _Brassica rapa_ pangenome, comprising 30 assemblies, together with resequencing data from 1,543 accessions, to demonstrate the [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) pipeline. This pipeline is broadly applicable to pangenome assemblies and population resequencing data from any species.
 
 ### Step1. Pipeline for constructing polymorphic _k_-mers using 30 _B. rapa_ genome assemblies.
 ```
