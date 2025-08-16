@@ -1,5 +1,7 @@
 # PanK-Pipeline: A Pan-genome _K_-mer Pipeline for Population Analysis
 
+## Introduction
+
 ## Installation
 The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) is installation-free but requires dependencies: 
 
@@ -16,8 +18,10 @@ Optional：
 ## Outputs
 
 
-## Introduction
-### Step1. Workflow for constructing polymorphic k-mers using 30 B. rapa genome assemblies.
+## PanK-Pipeline
+Here, We applied the _Brassica rapa_ pangenome, comprising 30 assemblies, together with resequencing data from 1,543 accessions, to demonstrate the [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) pipeline. This pipeline is broadly applicable to pangenome assemblies and population resequencing data from any species
+
+### Step1. Workflow for constructing polymorphic _k_-mers using 30 _B. rapa_ genome assemblies.
 
 
 ### Step2: Workflow for identifying representative k-mers across the B. rapa species.
