@@ -22,9 +22,19 @@ Optional：
 Here, We applied the _Brassica rapa_ pangenome, comprising 30 assemblies, together with resequencing data from 1,543 accessions, to demonstrate the [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) pipeline. This pipeline is broadly applicable to pangenome assemblies and population resequencing data from any species.
 
 ### Step1. Pipeline for constructing polymorphic _k_-mers using 30 _B. rapa_ genome assemblies.
+The current script Generate_PolymorphyicKmers.pl is used for constructing polymorphic _k_-mers using Pan-genome assemblies
 ```
+perl  Generate_PolymorphyicKmers.pl  -species Brapa  -ksize 17  -pangenome  Pangenome.txt  -PipelinePath  /mydata/caix/PanK-Pipeline
 
+-species        [required]    Prefix for output files    i.e. Brapa
+-ksize          [required]    k-mer size  i.e 17
+-pangenome      [required]    A file containing the abbreviation of each pan-genome member together with the absolute path to its genome sequence.
+-PipelinePath   [required]    The absolute path to the PanK-Pipeline directory   i.e. /mydata/caix/PanK-Pipeline
 
+##- A detailed example of the '-pangenome' parameter input file: the first column specifies the abbreviation, and the second column specifies the absolute path to the genome FASTA file, with columns separated by a tab.
+Bra_A03.A04	/mydata/caix/PanK-Pipeline/data/aa/new/Bra_A03.A04.fasta
+Bra_BRO.A04	/mydata/caix/PanK-Pipeline/data/aa/new/Bra_BRO.A04.fasta
+Bra_CCA.A04	/mydata/caix/PanK-Pipeline/data/aa/new/Bra_CCA.A04.fasta
 ```
 
 ### Step2: Pipeline for identifying representative k-mers across the _B. rapa_ species.
