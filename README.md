@@ -7,6 +7,7 @@ The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) is inst
 
 Required:
 1. [jellyfish](https://github.com/gmarcais/Jellyfish). In the present pipeline,[jellyfish](https://github.com/gmarcais/Jellyfish) is mainly used to quickly generate _k_-mers from resequencing reads and perform _k_-mer query.
+2. [bedtools](https://github.com/arq5x/bedtools2)(v2.27.1).
 
 Optional：
 1. [plink](https://www.cog-genomics.org/plink2/) (v1.90b6.21). [plink](https://www.cog-genomics.org/plink2/) is mainly used when performing population structure and PCA analysis with _k_-mers.
