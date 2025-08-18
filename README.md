@@ -10,9 +10,10 @@ Required:
 2. [bedtools](https://github.com/arq5x/bedtools2)(v2.27.1).
 
 Optional：
-1. [plink](https://www.cog-genomics.org/plink2/) (v1.90b6.21). plink is mainly used when performing population structure and PCA analysis with _k_-mers.
-2. [VCF2Dis](https://doi.org/10.1093/gigascience/giaf032)(VCF2Dis-1.54). VCF2Dis] is used to make the phylogenetic tree based on _k_-mer presence and absence matrix.
-3. [faststructure](https://github.com/rajanil/fastStructure). faststructure is used to make the population structure analysis. The present pipeline recomeneded a docker repository (dockerbiotools/faststructure).   
+1. [tabix/bgzip](https://sourceforge.net/projects/samtools/files/tabix/)
+2. [plink](https://www.cog-genomics.org/plink2/) (v1.90b6.21). plink is mainly used when performing population structure and PCA analysis with _k_-mers.
+3. [VCF2Dis](https://doi.org/10.1093/gigascience/giaf032)(VCF2Dis-1.54). VCF2Dis] is used to make the phylogenetic tree based on _k_-mer presence and absence matrix.
+4. [faststructure](https://github.com/rajanil/fastStructure). faststructure is used to make the population structure analysis. The present pipeline recomeneded a docker repository (dockerbiotools/faststructure).   
 
 ## Inputs
 
