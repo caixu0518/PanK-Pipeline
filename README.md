@@ -58,9 +58,26 @@ perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  
 ```
 ### Step3：Application of species-representative _k_-mers for population structure analysis in _B. rapa_.
 ```
+##- Genotyping representative k-mers in each resequencing accession. We provided a shell script to call CountKmersInReads.pl for batch genotyping of k-mers in each resequenced sample
+sh  Batch_KmerGenotyping.sh   *.representative.list   samids.txt  17  /mydata/caix/CC_k17_analysis/jffiles  /mydata/caix/PanK-Pipeline/scripts
+Input parameters for Batch_KmerGenotyping.sh:
+1. *.representative.list: representative k-mers generated from Step 2.
+2. samids.txt: The file contains all Resequenced sample ID. Resequenced sample ID (must start with a letter, recommended length <8 characters).
+3. 17: k-mer size.
+4. /mydata/caix/CC_k17_analysis/jffiles   The directory containing jf files of the specified k-mer length generated from resequencing reads. We recommend converting each resequencing dataset into the binary jf format using Jellyfish prior to running the pipeline, in order to reduce disk storage requirements
+
+Note: The Batch_KmerGenotyping.sh program outputs the genotyping results of representative k-mers for each resequenced accession, which are stored in the 'countresults' directory.
+
+##- The current script PopKmerGenotypesToVCF.pl is used to aggregate the genotyping results from each resequenced accession into a single VCF file.
+perl PopKmerGenotypesToVCF.pl  -Sam   samid.txt    -KmerGTDir  /mydata/caix/CC_k17_analysis/genotyping/countresults  -KmerList  merged.kmers.list.Polymorphic_kmers.List.representative.list   -threads    20
+-Sam         [Required]  The file contains all Resequenced sample ID. Resequenced sample ID (must start with a letter, recommended length <8 characters).
+-KmerGTDir   [Required]  Directory for storing the genotyping results of each resequenced accession
+-KmerList    [Required]  The file was used as the input for genotyping k-mers in each resequencing accession. Be sure to use the same file, as all genotyping result files have the same number of lines, which (starting from 1) serve as positions in the VCF.
+-threads     [Optional]  The number of threads used in the current script. default: 60
+
+Note: The PopKmerGenotypesToVCF.pl program generates the VCF file kmer.gt.vcf.gz and its corresponding index file kmer.gt.vcf.gz.tbi. Both files serve as input for subsequent population analyses.
 
 ```
-
 
 ## Citations
 
