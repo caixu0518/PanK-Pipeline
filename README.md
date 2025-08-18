@@ -87,6 +87,13 @@ perl PopKmerGenotypesToVCF.pl  -Sam   samid.txt    -KmerGTDir  /mydata/caix/CC_k
 Note: The PopKmerGenotypesToVCF.pl program generates the VCF file kmer.gt.vcf.gz and its corresponding index file kmer.gt.vcf.gz.tbi. Both files serve as input for subsequent population analyses.
 
 ```
+
+### Scripts to conduct population domestication analysis
+```
+
+
+```
+
 ### Additional scripts to perform population structure analysis
 ```
 ##- make the phylogenetic tree based on the VCF file containing the genotypes of all representative _k_-mers across all individuals in the resequencing population.
