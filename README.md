@@ -17,9 +17,13 @@ Optional：
 4. [faststructure](https://github.com/rajanil/fastStructure). faststructure (v1.0 was used) is used to make the population structure analysis. The present pipeline recomeneded a docker repository (dockerbiotools/faststructure).   
 
 ## Inputs
+1. Pan-genome assemblies in fasta format.
+2. Resequencing population reads.
 
 ## Outputs
-
+1. Pan-genome polymorphic _k_-mers
+2. Pan-genome representative _k_-mers
+3. A VCF file was generated containing the genotypes of all representative _k_-mers across all individuals in the resequencing population.
 
 ## PanK-Pipeline
 Here, We applied the _Brassica rapa_ pangenome, comprising 30 assemblies, together with resequencing data from 1,543 accessions, to demonstrate the [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) pipeline. This pipeline is broadly applicable to pangenome assemblies and population resequencing data from any species.
