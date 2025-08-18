@@ -6,6 +6,7 @@
 The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) is installation-free but requires dependencies: 
 
 Required:
+The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) was run in a Perl environment (version 5.28.3). 
 1. [jellyfish](https://github.com/gmarcais/Jellyfish). In the present pipeline, jellyfish is mainly used to quickly generate _k_-mers from resequencing reads and perform _k_-mer query.
 2. [bedtools](https://github.com/arq5x/bedtools2)(v2.27.1).
 
