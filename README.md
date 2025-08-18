@@ -97,6 +97,8 @@ plink  --vcf  ${vcfIn}  --recode    --allow-extra-chr  --out  ${prefix}   --vcf-
 plink --file ${prefix}   --make-bed  --out ${prefix}  --allow-extra-chr
 plink  --noweb --bfile  ${prefix}  --pca 20 --allow-extra-chr  --out plink.pca
 
+##- structure analysis
+/usr/bin/python    /fastStructure/structure.py   --input=$input  --output=final  -K $k
 
 ```
 
