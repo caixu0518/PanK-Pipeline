@@ -8,13 +8,13 @@ The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) is inst
 Required:
 The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) was run in a Perl environment (version 5.28.3). 
 1. [jellyfish](https://github.com/gmarcais/Jellyfish). In the present pipeline, jellyfish is mainly used to quickly generate _k_-mers from resequencing reads and perform _k_-mer query.
-2. [bedtools](https://github.com/arq5x/bedtools2)(v2.27.1).
+2. [bedtools](https://github.com/arq5x/bedtools2) (version v2.27.1 was used).
 
 Optional：
-1. [tabix/bgzip](https://sourceforge.net/projects/samtools/files/tabix/)
-2. [plink](https://www.cog-genomics.org/plink2/) (v1.90b6.21). plink is mainly used when performing population structure and PCA analysis with _k_-mers.
+1. [tabix version: 0.2.5 (r1005)/bgzip ](https://sourceforge.net/projects/samtools/files/tabix/)
+2. [plink](https://www.cog-genomics.org/plink2/) (v1.90b6.21 was used). plink is mainly used when performing population structure and PCA analysis with _k_-mers.
 3. [VCF2Dis](https://doi.org/10.1093/gigascience/giaf032) (VCF2Dis-1.54). VCF2Dis] is used to make the phylogenetic tree based on _k_-mer presence and absence matrix.
-4. [faststructure](https://github.com/rajanil/fastStructure). faststructure is used to make the population structure analysis. The present pipeline recomeneded a docker repository (dockerbiotools/faststructure).   
+4. [faststructure](https://github.com/rajanil/fastStructure). faststructure (v1.0) is used to make the population structure analysis. The present pipeline recomeneded a docker repository (dockerbiotools/faststructure).   
 
 ## Inputs
 
