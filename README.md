@@ -92,6 +92,20 @@ Note: The PopKmerGenotypesToVCF.pl program generates the VCF file kmer.gt.vcf.gz
 ```
 
 
+##- The current script AssignCandidatekmersToAssembly.pl is used to  assign the candidate k-mers to different assemblies
+perl AssignCandidatekmersToAssembly.pl -candidateKmers CC.candidate.kmer.list -fastaKmers fastaKmerfile.txt -representativeKmers merged.kmers.list.Polymorphic_kmers.List.representative.list
+-candidateKmers        [required] Candidate k-mer index, output from  Generate_enrichmentKmersInTargetGroup.pl
+-fastaKmers            [required] The file includes the filenames of the k-mer files corresponding to each assembly. These k-mer files are generated in Step 1 and are located in the 'FastaKmerList' directory.
+-representativeKmers   [required] Representative k-mer list file
+
+Inputs:
+1. ”fastaKmerfile.txt“ contains one k-mer file per line, with each line corresponding to the k-mer file of a genome sequence.
+T01.k17.clean.list.gz
+T02.k17.clean.list.gz
+Outputs：
+1. "Kmers.sample.log" The proportion of domestication-related k-mers of the derived group in different genomes.
+2. "results" The results directory contains the genomic locations of the candidate k-mers in each genome.
+
 ```
 
 ### Additional scripts to perform population structure analysis
