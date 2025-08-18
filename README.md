@@ -24,7 +24,7 @@ Optional：
 ## PanK-Pipeline
 Here, We applied the _Brassica rapa_ pangenome, comprising 30 assemblies, together with resequencing data from 1,543 accessions, to demonstrate the [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) pipeline. This pipeline is broadly applicable to pangenome assemblies and population resequencing data from any species.
 
-### Step1. Pipeline for constructing polymorphic _k_-mers using 30 _B. rapa_ genome assemblies.
+### Step1. Pipeline for constructing Pan-genome polymorphic _k_-mers using 30 _B. rapa_ genome assemblies.
 The current script Generate_PolymorphyicKmers.pl is used for constructing polymorphic _k_-mers using Pan-genome assemblies
 ```
 perl  Generate_PolymorphyicKmers.pl  -species Brapa  -ksize 17  -pangenome  Pangenome.txt  -PipelinePath  /mydata/caix/PanK-Pipeline
