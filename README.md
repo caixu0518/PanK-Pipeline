@@ -88,7 +88,7 @@ Note: The PopKmerGenotypesToVCF.pl program generates the VCF file kmer.gt.vcf.gz
 
 ```
 
-### Scripts to conduct population domestication analysis
+### Scripts for conducting population domestication analysis
 ```
 ##- The current script Generate_enrichmentKmersInTargetGroup.pl is used to detected candidate domestication related k-mers between derived and control groups   
 perl Generate_enrichmentKmersInTargetGroup.pl -deriviedGroup Cabbageid.txt -vcfIn CC.part.vcf -output CC.candidate.kmer.list
