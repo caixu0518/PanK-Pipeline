@@ -21,8 +21,8 @@ Optional：
 2. Resequencing population reads.
 
 ## Outputs
-1. Pan-genome polymorphic _k_-mers
-2. Pan-genome representative _k_-mers
+1. Pan-genome polymorphic _k_-mers.
+2. Pan-genome representative _k_-mers.
 3. A VCF file was generated containing the genotypes of all representative _k_-mers across all individuals in the resequencing population.
 
 ## PanK-Pipeline
