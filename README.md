@@ -59,6 +59,7 @@ perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  
 ##- The output files of Step 2 have the suffix “.representative.list” and share the same format as the “.list.Polymorphic_kmers.List” files generated in Step 1.
 ```
 ### Step3：Application of species-representative _k_-mers for population structure analysis in _B. rapa_.
+The output VCF file (kmer.gt.vcf.gz) and its corresponding index file (kmer.gt.vcf.gz.tbi) can be used as input for downstream analyses, including phylogenetic tree construction with VCF2Dis[VCF2Dis](https://doi.org/10.1093/gigascience/giaf032), principal component analysis (PCA) with [plink](https://www.cog-genomics.org/plink2/), and population structure inference with [faststructure](https://github.com/rajanil/fastStructure).
 ```
 ##- Genotyping representative k-mers in each resequencing accession. We provided a shell script to call CountKmersInReads.pl for batch genotyping of k-mers in each resequenced sample
 sh  Batch_KmerGenotyping.sh   *.representative.list   samids.txt  17  /mydata/caix/CC_k17_analysis/jffiles  /mydata/caix/PanK-Pipeline/scripts
