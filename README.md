@@ -50,7 +50,7 @@ CTGACCTCCTTTGTCTC  190  0.43
 GGGCATCCACGACTTTA  80  0.20
 ```
 
-### Step2: Pipeline for identifying Pan-genome representative _k_-mers across the _B. rapa_ species.
+### Step2: Pipeline for identifying Pan-genome representative _k_-mers.
 ```
 perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  Pangenome.txt    -PipelinePath   /mydata/caix/PanK-Pipeline   -PolymorphicKmer  rapa.merged.kmer.k17.list.Polymorphic_kmers.List
 -species            [required]    Prefix for output files    i.e. Brapa
