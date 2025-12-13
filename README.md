@@ -49,6 +49,10 @@ ATTGCATTCCTTAAAAC  100  0.33
 CTGACCTCCTTTGTCTC  190  0.43
 GGGCATCCACGACTTTA  80  0.20
 ```
+<div align=center>
+<img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_A.jpg">
+</div>
+
 
 ### Step2: Pipeline for identifying Pan-genome representative _k_-mers.
 ```
@@ -63,10 +67,18 @@ perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  
 ##- The output files of Step 2 have the suffix “.representative.list” and share the same format as the “.list.Polymorphic_kmers.List” files generated in Step 1.
 
 ```
+<div align=center>
+<img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_B.jpg">
+</div>
+
 ### Step3：Application of Pan-genome representative _k_-mers for population structure analysis in _B. rapa_.
 The output VCF file (kmer.gt.vcf.gz) and its corresponding index file (kmer.gt.vcf.gz.tbi) can be used as input for downstream analyses, including phylogenetic tree construction with [VCF2Dis](https://doi.org/10.1093/gigascience/giaf032), principal component analysis (PCA) with [plink](https://www.cog-genomics.org/plink2/), and population structure inference with [faststructure](https://github.com/rajanil/fastStructure).
 
 ```
+<div align=center>
+<img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_C.jpg">
+</div>
+
 ##- Genotyping representative k-mers in each resequencing accession. We provided a shell script to call CountKmersInReads.pl for batch genotyping of k-mers in each resequenced sample
 sh  Batch_KmerGenotyping.sh   *.representative.list   samids.txt  17  /mydata/caix/CC_k17_analysis/jffiles  /mydata/caix/PanK-Pipeline/scripts
 Input parameters for Batch_KmerGenotyping.sh:
