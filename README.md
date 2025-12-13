@@ -52,6 +52,7 @@ GGGCATCCACGACTTTA  80  0.20
 <div align=center>
 <img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_A.jpg">
 </div>
+Pipeline for identifying Pan-genome polymorphic _k_-mers using 30 _B. rapa_ genome assemblies.
 
 
 ### Step2: Pipeline for identifying Pan-genome representative _k_-mers.
@@ -70,6 +71,7 @@ perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  
 <div align=center>
 <img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_B.jpg">
 </div>
+Pipeline for identifying Pan-genome representative k-mers across the _B. rapa_ species.
 
 ### Step3：Application of Pan-genome representative _k_-mers for population structure analysis in _B. rapa_.
 The output VCF file (kmer.gt.vcf.gz) and its corresponding index file (kmer.gt.vcf.gz.tbi) can be used as input for downstream analyses, including phylogenetic tree construction with [VCF2Dis](https://doi.org/10.1093/gigascience/giaf032), principal component analysis (PCA) with [plink](https://www.cog-genomics.org/plink2/), and population structure inference with [faststructure](https://github.com/rajanil/fastStructure).
@@ -137,6 +139,7 @@ plink  --noweb --bfile  ${prefix}  --pca 20 --allow-extra-chr  --out plink.pca
 <div align=center>
 <img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_C.jpg">
 </div>
+Application of Pan-genome representative _k_-mers for population analysis.
 
 ## Citations
 
