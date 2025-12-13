@@ -6,4 +6,4 @@ The testdata.zip file can be downloaded directly from the shared Google Drive li
 
 From Google Drive (https://drive.google.com/file/d/1vocLkzop2grbC2qVCUrMEN0jjSQlF3D-/view?usp=sharing)
 
-From Baidu Cloud (https://pan.baidu.com/s/191eTuPq2gpQRilfgmkIXjg, extraction code: 1111)
+From Baidu Netdisk (https://pan.baidu.com/s/191eTuPq2gpQRilfgmkIXjg, extraction code: 1111)
