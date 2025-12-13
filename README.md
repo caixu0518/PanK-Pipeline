@@ -53,7 +53,7 @@ GGGCATCCACGACTTTA  80  0.20
 <img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_A.jpg">
 </div>
 <p align="center">
-Pipeline for identifying Pan-genome polymorphic *k*-mers using 30 *B. rapa* genome assemblies.
+Pipeline for identifying Pan-genome polymorphic k-mers using 30 B. rapa genome assemblies.
 </p>
 
 ### Step2: Pipeline for identifying Pan-genome representative _k_-mers.
@@ -73,7 +73,7 @@ perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  
 <img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_B.jpg">
 </div>
 <p align="center">
-Pipeline for identifying Pan-genome representative k-mers across the _B. rapa_ species.
+Pipeline for identifying Pan-genome representative k-mers across the B. rapa species.
 </p>
 
 ### Step3：Application of Pan-genome representative _k_-mers for population structure analysis in _B. rapa_.
@@ -143,7 +143,7 @@ plink  --noweb --bfile  ${prefix}  --pca 20 --allow-extra-chr  --out plink.pca
 <img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_C.jpg">
 </div>
 <p align="center">
-Application of Pan-genome representative _k_-mers for population analysis.
+Application of Pan-genome representative k-mers for population analysis.
 </p>
 ## Citations
 
