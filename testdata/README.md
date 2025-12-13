@@ -11,7 +11,7 @@ From Baidu Netdisk (https://pan.baidu.com/s/191eTuPq2gpQRilfgmkIXjg, extraction 
 
 ## How to Use the Test Dataset: A Step-by-Step Workflow
 
-'runme.sh' is a shell script containing the commands to run the pipeline. Please update the absolute path to the script according to the actual installation directory of PanK-Pipeline.
+'runme.sh' is a shell script containing the commands to run the pipeline. Please update the absolute path to the script according to the actual installation directory of PanK-Pipeline. The scripts Generate_PolymorphicKmers.pl, Generate_RepresentativeKmers.pl, and PopKmerGenotypesToVCF.pl can be copied directly to the current working directory and run.
 
 ```
 unzip testdata.zip
