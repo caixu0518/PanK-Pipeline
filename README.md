@@ -75,10 +75,6 @@ perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  
 The output VCF file (kmer.gt.vcf.gz) and its corresponding index file (kmer.gt.vcf.gz.tbi) can be used as input for downstream analyses, including phylogenetic tree construction with [VCF2Dis](https://doi.org/10.1093/gigascience/giaf032), principal component analysis (PCA) with [plink](https://www.cog-genomics.org/plink2/), and population structure inference with [faststructure](https://github.com/rajanil/fastStructure).
 
 ```
-<div align=center>
-<img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_C.jpg">
-</div>
-
 ##- Genotyping representative k-mers in each resequencing accession. We provided a shell script to call CountKmersInReads.pl for batch genotyping of k-mers in each resequenced sample
 sh  Batch_KmerGenotyping.sh   *.representative.list   samids.txt  17  /mydata/caix/CC_k17_analysis/jffiles  /mydata/caix/PanK-Pipeline/scripts
 Input parameters for Batch_KmerGenotyping.sh:
@@ -138,6 +134,9 @@ plink  --noweb --bfile  ${prefix}  --pca 20 --allow-extra-chr  --out plink.pca
 /usr/bin/python    /fastStructure/structure.py   --input=$input  --output=final  -K $k
 
 ```
+<div align=center>
+<img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_C.jpg">
+</div>
 
 ## Citations
 
