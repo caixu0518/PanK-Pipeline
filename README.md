@@ -53,7 +53,7 @@ GGGCATCCACGACTTTA  80  0.20
 <img src="https://github.com/caixu0518/PanK-Pipeline/blob/main/scripts/PanK-Pipeline_A.jpg">
 </div>
 <p align="center">
-Pipeline for identifying Pan-genome polymorphic _k_-mers using 30 B. rapa genome assemblies.
+Pipeline for identifying Pan-genome polymorphic k-mers using 30 B. rapa genome assemblies.
 </p>
 
 ### Step2: Pipeline for identifying Pan-genome representative _k_-mers.
