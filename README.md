@@ -9,6 +9,7 @@ Required:
 1. The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) was run in a Perl environment (version 5.28.3). 
 2. [jellyfish](https://github.com/gmarcais/Jellyfish). In the present pipeline, jellyfish is mainly used to quickly generate _k_-mers from resequencing reads and perform _k_-mer query.
 3. [bedtools](https://github.com/arq5x/bedtools2) (version v2.27.1 was used).
+4. [ParaFly](https://github.com/ParaFly/ParaFly) The ParaFly program must be installed in advance, and its executable path must be included in the default environment (.bashrc) of your Linux system.
 
 Optional：
 1. [tabix/bgzip ](https://sourceforge.net/projects/samtools/files/tabix/). tabix (version: 0.2.5 (r1005) was used).
