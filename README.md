@@ -77,7 +77,8 @@ perl  Generate_RepresentativeKmers.pl  -species  Brapa  -ksize  17  -pangenome  
 Pipeline for identifying Pan-genome representative k-mers across the B. rapa species.
 </p>
 
-### Step3：Application of Pan-genome representative _k_-mers for population structure analysis in _B. rapa_.
+### Step3：Genotyping of resequenced individuals and use of pan-genome representative k-mers for population structure analysis in _B. rapa_.
+Two alternative scripts are provided for genotyping of resequenced individuals: Batch_KmerGenotyping.sh, which uses Jellyfish, and CountKmersInReads_PanKpipe.sh, which uses KMC. PopKmerGenotypesToVCF.pl was used to generate a population-level VCF file based on the presence/absence information of representative _k_-mers.
 The output VCF file (kmer.gt.vcf.gz) and its corresponding index file (kmer.gt.vcf.gz.tbi) can be used as input for downstream analyses, including phylogenetic tree construction with [VCF2Dis](https://doi.org/10.1093/gigascience/giaf032), principal component analysis (PCA) with [plink](https://www.cog-genomics.org/plink2/), and population structure inference with [faststructure](https://github.com/rajanil/fastStructure).
 
 ```
@@ -90,6 +91,11 @@ Input parameters for Batch_KmerGenotyping.sh:
 4. /mydata/caix/CC_k17_analysis/jffiles   The directory containing jf files of the specified k-mer length generated from resequencing reads. We recommend converting each resequencing dataset into the binary jf format using Jellyfish prior to running the pipeline, in order to reduce disk storage requirements
 
 Note: The Batch_KmerGenotyping.sh program outputs the genotyping results of representative k-mers for each resequenced accession, which are stored in the 'countresults' directory.
+
+Each resequenced sample was processed separately for genotyping using KMC.
+sh CountKmersInReads_PanKpipe.sh accession.id   *.representative.list  k-mer size
+For each resequenced individual, accession.id denotes its identifier, and the corresponding paired-end reads are expected to have the suffixes _1.fq.ft.gz and _2.fq.ft.gz.
+
 
 ##- The current script PopKmerGenotypesToVCF.pl is used to aggregate the genotyping results from each resequenced accession into a single VCF file.
 perl PopKmerGenotypesToVCF.pl  -Sam   samid.txt    -KmerGTDir  /mydata/caix/CC_k17_analysis/genotyping/countresults  -KmerList  merged.kmers.list.Polymorphic_kmers.List.representative.list   -threads    20
