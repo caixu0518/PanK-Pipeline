@@ -7,7 +7,7 @@ The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) is inst
 
 Required:
 1. The pipeline [PanK-Pipeline](https://github.com/caixu0518/PanK-Pipeline) was run in a Perl environment (version 5.28.3). 
-2. [jellyfish](https://github.com/gmarcais/Jellyfish). In the present pipeline, jellyfish is mainly used to quickly generate _k_-mers from resequencing reads and perform _k_-mer query.
+2. [jellyfish](https://github.com/gmarcais/Jellyfish). In the present pipeline, jellyfish is mainly used to quickly generate _k_-mers from resequencing reads and perform _k_-mer query. We provide an alternative implementation using [KMC](https://github.com/refresh-bio/KMC) (ver. 3.2.4 was used) in the genotyping step.
 3. [bedtools](https://github.com/arq5x/bedtools2) (version v2.27.1 was used).
 4. [ParaFly](https://github.com/ParaFly/ParaFly) The ParaFly program must be installed in advance, and its executable path must be included in the default environment (.bashrc) of your Linux system.
 
