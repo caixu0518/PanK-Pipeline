@@ -92,7 +92,7 @@ Input parameters for Batch_KmerGenotyping.sh:
 
 Note: The Batch_KmerGenotyping.sh program outputs the genotyping results of representative k-mers for each resequenced accession, which are stored in the 'countresults' directory.
 
-Each resequenced sample was processed separately for genotyping using KMC.
+##- Each resequenced sample was processed separately for genotyping using KMC.
 sh CountKmersInReads_PanKpipe.sh accession.id   *.representative.list  k-mer size
 For each resequenced individual, accession.id denotes its identifier, and the corresponding paired-end reads are expected to have the suffixes _1.fq.ft.gz and _2.fq.ft.gz.
 
